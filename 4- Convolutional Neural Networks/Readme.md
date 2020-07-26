@@ -410,6 +410,8 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - VGG paper is attractive it tries to make some rules regarding using CNNs.
   - [[Simonyan & Zisserman 2015. Very deep convolutional networks for large-scale image recognition]](https://arxiv.org/abs/1409.1556)
 
+Keras Tutorial --> https://www.kaggle.com/yassineghouzam/introduction-to-cnn-keras-0-997-top-6
+
 ### Residual Networks (ResNets)
 
 - Very, very deep NNs are difficult to train because of vanishing and exploding gradients problems.
