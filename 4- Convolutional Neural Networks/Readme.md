@@ -1194,11 +1194,13 @@ Keras Tutorial --> https://www.kaggle.com/yassineghouzam/introduction-to-cnn-ker
   - To make sure the NN won't get an output of zeros easily:
   - `||f(A) - f(P)||^2  - ||f(A) - f(N)||^2 <= -alpha`
     - Alpha is a small number. Sometimes its called the margin.
+  - Alpha pushes the difference between postive and negative distance
   - Then
   - `||f(A) - f(P)||^2  - ||f(A) - f(N)||^2 + alpha <= 0`
 - Final Loss function:
   - Given 3 images (A, P, N)
   - `L(A, P, N) = max (||f(A) - f(P)||^2  - ||f(A) - f(N)||^2 + alpha , 0)`
+  - Loss function ensures that either the loss is zero as the other part would be less than zero in the ideal case or we would have a loss(Here the magnitude of loss doesnt matter) 
   - `J = Sum(L(A[i], P[i], N[i]) , i)` for all triplets of images.
 - You need multiple images of the same person in your dataset. Then get some triplets out of your dataset. Dataset should be big enough.
 - Choosing the triplets A, P, N:
